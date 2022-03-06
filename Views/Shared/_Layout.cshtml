@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    @* @Styles.Render("~/Content/css")*@
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="~/Content/MyMainLayout.css" rel="stylesheet" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/scripts/jquery.validate.min.js"></script>
+    <script src="~/scripts/jquery.validate.unobtrusive.min.js"></script>
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+
+<body>
+
+
+
+
+
+    <div class="container ">
+
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6 col-xs-6">
+
+                <div class="logo">
+
+                    <h1><a href="#">UpTown <span>Fresh</span></a></h1>
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-xs-6">
+
+                <div class="account">
+
+                    <ul>
+
+                        <li>
+
+                            <div class="hidden-xs">
+
+
+
+
+
+                            </div>
+
+                            <div class="visible-xs">
+
+
+
+                                <p>0180##-#####</p>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+            </div>
+
+            <li>@Html.ActionLink("SignIn", "SignIn", "SignIn")</li>
+
+
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div class="nav-menus">
+
+                        <ul class="nav nav-pills">
+
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("items", "Index", "Item")</li>
+                            <li>@Html.ActionLink("Shopping", "Index", "Shopping")</li>
+                        </ul>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    @RenderBody()
+
+    <hr />
+
+    <footer>
+
+        <p>&copy; UpTownFreshOnLineStore.AllRightsReserved</p>
+
+    </footer>
+
+
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+
+    @Scripts.Render("~/bundles/bootstrap")
+
+    @RenderSection("scripts", required: false)
+
+</body>
+
+</html>
